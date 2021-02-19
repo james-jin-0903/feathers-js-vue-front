@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="45px" viewBox="0 0 56 45" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M0,20.9735772 C0,23.7733051 1.38161072,26.3889067 3.68512956,27.9527187 L28.5449452,44.8250729 L51.4950343,28.5008937 C53.7117854,26.9236295 55.0291545,24.3609957 55.0291545,21.6276878 L55.0291545,0.146292088 L28.266287,19.183601 L0,0 L0,20.9735772 Z" id="path-1"></path>
+        <linearGradient x1="52.4585223%" y1="102.563495%" x2="43.3544121%" y2="17.5315694%" id="linearGradient-3">
+            <stop stop-color="#231981" offset="0%"></stop>
+            <stop stop-color="#6DBAD7" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="73.8858271%" y1="85.6519096%" x2="0%" y2="0%" id="linearGradient-4">
+            <stop stop-color="#231981" offset="0%"></stop>
+            <stop stop-color="#6DBAD7" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Refresh" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="wide" transform="translate(-157.000000, -439.000000)">
+            <g id="Group-2" transform="translate(157.000000, 439.000000)">
+                <g id="Group">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-2"></g>
+                    <path d="M0,20.9735772 C0,23.7733051 1.38161072,26.3889067 3.68512956,27.9527187 L28.5449452,44.8250729 L51.4950343,28.5008937 C53.7117854,26.9236295 55.0291545,24.3609957 55.0291545,21.6276878 L55.0291545,0.146292088 L28.266287,19.183601 L0,0 L0,20.9735772 Z" id="Fill-1" fill="url(#linearGradient-3)" mask="url(#mask-2)"></path>
+                    <path d="M54.7998664,0.231057077 L28.4317298,44.8250729 L51.2812353,28.531864 C53.4874402,26.9575923 54.7998664,24.3989812 54.7998664,21.6708589 L54.7998664,0.231057077 Z" id="Fill-4" fill="#231C7A" mask="url(#mask-2)"></path>
+                    <path d="M28.4317298,44.8250729 L0,0 L0,20.9735772 C0,23.7733051 1.37613096,26.388066 3.67051355,27.9527187 L28.4317298,44.8250729 Z" id="Fill-10" fill="url(#linearGradient-4)" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

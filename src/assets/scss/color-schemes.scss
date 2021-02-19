@@ -1,0 +1,665 @@
+//@import '_variables';
+
+body.theme-a {
+  .card-base {
+    background: darken($background-color, 3%);
+  }
+}
+
+body.theme-dark {
+
+  background: lighten($background-color-dark, 5%);
+  //scrollbar styles
+  ::-webkit-scrollbar {
+    width: 0.5em;
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: $voxo-green;
+    outline: 1px solid $text-color-dark;
+  }
+
+  color: $text-color-dark;
+
+  .bg-primary {
+    background-color: $background-color-dark !important;
+  }z
+
+  .bg-primary-light {
+    background-color: lighten($background-color-dark, 15%) !important;
+  }
+
+  .bg-primary-lighter {
+    background-color: lighten($background-color-dark, 35%) !important;
+  }
+
+  .card-base {
+    background: lighten($background-color-dark, 5%);
+  }
+
+  .layout-container {
+    background: $background-color-dark;
+  }
+
+  // Change dark theme styling to lighten titles and hover animations
+  .el-menu {
+    background-color: $background-color-dark;
+  }
+
+  .el-menu-item {
+    color: white;
+  }
+
+  .el-menu-item:hover {
+    background-color: lighten($background-color-dark, 5%) !important;
+  }
+
+  .el-submenu__title:hover {
+    background-color: lighten($background-color-dark, 5%) !important;
+  }
+
+  .el-dropdown-menu__item:focus{
+    background-color: lighten($background-color-dark, 5%) !important;
+  }
+
+  .main-navigation-menu .el-submenu__title,
+  .main-navigation-menu .el-menu-item:not(.is-active) {
+    color: $text-color-accent-dark;
+  }
+
+  .main-navigation-menu:not(.el-menu--collapse):not(.el-menu--horizontal) .el-menu-item:hover,
+  .main-navigation-menu:not(.el-menu--collapse):not(.el-menu--horizontal) .el-submenu:not(.is-opened):hover {
+    background-color: lighten($background-color-dark, 5%) !important;
+  }
+
+  .el-submenu.is-active.is-opened > ul > li.el-menu-item.is-active {
+    background-color: $primary-color !important;
+  }
+
+  .main-navigation-menu.el-menu--horizontal:not(.el-menu--collapse) .el-menu-item-group__title {
+    color: rgba(0, 0, 0, 0.35);
+  }
+
+  .box-logo .collapse-nav {
+    box-shadow: 0px 0px 20px 10px lighten($background-color-dark, 5%);
+    background: $background-color-dark;
+  }
+
+  .form-section-header {
+    color: $text-color-dark;
+  }
+
+  .el-loading-mask {
+    background: transparentize($background-color-dark, 0.1);
+  }
+
+  .el-input--suffix .el-input__inner, .el-input--prefix .el-input__inner, .el-textarea__inner {
+    background: $background-color-dark;
+    color: $text-color-dark;
+    border: 1px solid $border-color-dark;
+  }
+
+  .el-input-group__append {
+    background: lighten($background-color-dark, 5%);
+    color: $text-color-dark;
+    border: 1px solid $border-color-dark;
+  }
+
+  .el-input__inner {
+    background: $background-color-dark;
+    color: $text-color-dark;
+    border: 1px solid $border-color-dark;
+  }
+
+  .el-checkbox__inner {
+    background-color: lighten($background-color-dark, 5%);
+  }
+
+  .el-range-input{
+    background-color: lighten($background-color-dark, 5%);
+    color: #ececec;
+  }
+
+  .el-picker-panel__sidebar{
+    background: $background-color-dark;
+    border-right: 1px solid lighten($background-color-dark, 5%);
+  }
+
+  .el-date-range-picker__content.is-left{
+    border-right: 1px solid lighten($background-color-dark, 5%);
+  }
+
+  .el-range-separator{
+    color: #ececec;
+  }
+
+
+  .el-picker-panel__shortcut{
+    color: #ececec;
+  }
+
+  .el-date-table td.in-range div{
+    background-color: lighten($background-color-dark, 5%);
+  }
+
+  .el-switch__label{
+    color: #fff;
+  }
+
+  .el-switch__label.is-active{
+    color: $text-color-accent;
+  }
+
+  .el-select, .el-date-editor {
+
+    .el-input__inner {
+      background: #252a33;
+      border: 2px solid $border-color-dark;
+      box-shadow: none;
+    }
+  }
+
+  .el-input__inner:focus, .el-textarea__inner:focus {
+    border-color: $primary-color;
+  }
+
+  .el-autocomplete-suggestion li:hover {
+    background-color: $background-color-dark;
+  }
+
+   .el-autocomplete-suggestion li.highlighted {
+     background-color: lighten($background-color-dark, 5%);
+   }
+
+  .el-scrollbar__wrap {
+    background: $background-color-dark;
+  }
+
+  .el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
+    background-color: lighten($background-color-dark, 5%);
+  }
+
+  .el-select-dropdown {
+    border: solid 1px $primary-color;
+  }
+
+  .el-select-dropdown__empty {
+    background-color: lighten($background-color-dark, 5%);
+    color: $text-color-dark;
+  }
+
+  .el-dropdown-menu {
+    background-color: $background-color-dark;
+    border: solid 1px $primary-color;
+  }
+
+  .el-dropdown-menu__item {
+    color: $text-color-dark;
+    &:hover{
+      background: lighten($background-color-dark, 5%);
+    }
+  }
+
+  .el-dropdown-menu__item--divided {
+    border: solid 1px lighten($background-color-dark, 5%);
+    &::before {
+      background-color: lighten($background-color-dark, 5%);
+    }
+  }
+
+  .el-select-dropdown__item {
+    color: $text-color-dark;
+  }
+
+  .el-button--default {
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+    box-shadow: inset 0 0 0 1px $border-color-dark, 0 1px 0 rgba(44, 45, 48, 0.15);
+    &:hover{
+      background: $background-color-dark;
+    }
+    &:focus{
+      background: $background-color-dark;
+    }
+  }
+
+  .el-table {
+    background-color: lighten($background-color-dark, 5%);
+    color: $text-color-dark;
+
+    &::before {
+      background-color: lighten($background-color-dark, 5%);
+    }
+
+    thead {
+      color: $text-color-dark;
+    }
+
+    tr {
+      background-color: lighten($background-color-dark, 5%);
+
+      &:hover {
+        background-color: transparentize($background-color-dark, 0.1);
+      }
+    }
+
+    th {
+      background: $background-color-dark;
+      border-bottom: 2px solid $border-color-dark !important;
+      border-top: 1px solid $border-color-dark !important;
+    }
+
+    td {
+      color: $text-color-dark;
+      border-bottom: none;
+    }
+  }
+
+  .el-table--striped .el-table__body tr.el-table__row--striped td {
+    background: $background-color-dark;
+  }
+
+  .el-table--enable-row-hover .el-table__body tr:hover > td {
+    background: lighten($background-color-dark, 10%);
+  }
+
+  .el-table__row .current-row {
+    background-color: lighten($background-color-dark, 10%) !important;
+  }
+
+  .el-table__body tr.current-row > td {
+    background-color: lighten($background-color-dark, 10%) !important;
+  }
+
+  .el-dialog {
+    background: $background-color-dark;
+  }
+
+  .el-dialog__title {
+    color: $text-color-dark;
+    font-weight: 900;
+  }
+
+  .el-checkbox .el-checkbox__label {
+    color: $text-color-dark;
+  }
+
+  .el-tabs:not(.el-tabs--border-card) .el-tabs__item:not(.is-active) {
+    color: $text-color-dark;
+  }
+
+  .el-select-dropdown.is-multiple .el-select-dropdown__item.selected {
+    background-color: lighten($background-color-dark, 10%);
+  }
+
+  .modal-header-layout {
+    background: lighten($background-color-dark, 5%);
+
+    .modal-title {
+      color: $text-color-dark;
+    }
+  }
+
+  .el-message-box {
+    background-color: $background-color-dark;
+    border: 1px solid $primary-color;
+  }
+
+  .el-message-box__title {
+    color: $text-color-dark;
+  }
+
+  .el-message-box__content {
+    color: $text-color-dark;
+  }
+
+  .el-upload-dragger{
+    background-color: $background-color-dark;
+  }
+
+  .el-upload__text{
+    color: $text-color-dark;
+  }
+
+  .el-upload-list__item-name{
+    color: $text-color-dark;
+  }
+
+  .el-upload-list__item:hover{
+    background-color: lighten($background-color-dark, 10%);
+  }
+
+  .el-pagination.is-background .el-pager li {
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+  }
+
+  .el-pagination .btn-prev .el-icon{
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+  }
+
+  .el-pagination.is-background .btn-prev{
+    background-color: $background-color-dark;
+  }
+
+  .el-pagination .btn-next .el-icon{
+    background-color: $background-color-dark;
+    color: $text-color-dark;
+  }
+  .el-pagination.is-background .btn-next{
+    background-color: $background-color-dark;
+  }
+
+
+  .pac-container {
+    background-color: $background-color-dark;
+  }
+
+  .pac-item-query {
+    color: $text-color-dark;
+  }
+
+  .pac-item {
+    border-top: none;
+  }
+
+  .pac-item:hover {
+    background-color: lighten($background-color-dark, 5%);
+  }
+
+  .black-text {
+    color: $text-color-dark;
+  }
+
+  .login-page, .forgot-password-page {
+    background: $background-color-dark;
+  }
+
+  .table-actions {
+    background: lighten($background-color-dark, 5%);
+    border: 1px solid $border-color-dark;
+  }
+
+  .system-status-group {
+    border-bottom: 1px solid $hr-dark;
+  }
+
+  .widget .widget-header .widget-title {
+    border-bottom: 1px solid $hr-dark;
+  }
+
+  .el-transfer-panel {
+    background: $background-color-dark;
+    border: 1px solid $border-color-dark;
+
+    .el-transfer-panel__header {
+      background: lighten($background-color-dark, 5%);
+      border-bottom: 1px solid $border-color-dark;
+
+      .el-checkbox__label {
+        color: $text-color-dark;
+      }
+    }
+
+    .el-checkbox__label {
+      color: $text-color-dark;
+    }
+
+    .el-checkbox__inner {
+      background-color: lighten($background-color-dark, 5%);
+    }
+  }
+
+  .el-transfer__button.is-disabled {
+    background-color: lighten($background-color-dark, 5%);
+    border: 1px solid $border-color-dark;
+    color: $text-color-dark;
+  }
+
+  .el-step__icon {
+    background: $background-color-dark;
+  }
+
+  .el-step__head.is-process {
+    color: $primary-color;
+    border-color: $primary-color;
+  }
+
+  .el-picker-panel {
+    background: $background-color-dark;
+    color: $text-color-dark;
+    border: 1px solid $primary-color;
+  }
+
+  .el-picker-panel__icon-btn {
+    color: $text-color-dark;
+  }
+
+  .el-date-picker__header-label {
+    color: $text-color-dark;
+  }
+
+  .el-date-picker__header--bordered {
+    border-bottom: 1px solid $border-color-dark;
+  }
+
+  .el-picker-panel__content {
+
+    .el-date-table th {
+      border-bottom: 1px solid $border-color-dark;
+    }
+
+    .el-date-table td.disabled div, .el-month-table td.disabled .cell, .el-year-table td.disabled .cell {
+      background-color: lighten($background-color-dark, 10%);
+    }
+  }
+
+  .el-popover.el-popper {
+    background: $background-color-dark;
+    border-color: $primary-color;
+  }
+
+  .notes-container {
+    border: 1px solid #4e585d;
+  }
+
+  // NOTIFICATION
+
+  .el-notification {
+    background-color: lighten($background-color-dark, 5%);
+    border: 1px solid $background-color-dark;
+
+    .el-notification__title {
+      color: $text-color-accent-dark;
+    }
+
+    .el-notification__content {
+      color: $text-color-dark;
+    }
+  }
+
+  //toolbar
+
+  #devices-dropdown-toolbar{
+    border: 1px solid $border-color-dark;
+    background: $background-color-dark;
+    color: $text-color-dark;
+  }
+
+  .toolbar{
+    .dropdown-icon{
+      background: $background-color-dark;
+      border: 1px solid $border-color-dark;
+      color: $text-color-dark;
+      &:hover, &:focus  {
+        background-color: lighten($background-color-dark, 5%);
+      }
+    }
+  }
+
+  //incoming call
+
+  .incoming-call{
+    .incoming-actions{
+      display: flex;
+      border-top: 1px solid $border-color-dark;
+      >*{
+        flex-basis: 50%;
+      }
+      .incoming-accept-button{
+        border-right: 1px solid $border-color-dark;
+      }
+    }
+    .incoming-call-container{
+      color: $text-color-dark;
+    }
+    .incoming-accept-button{
+      color: $text-color-dark;
+    }
+    .incoming-decline-button{
+      color: $text-color-dark;
+    }
+  }
+
+  //hud portal view
+
+  .vue-csv-uploader{
+    .btn{
+      padding: 10px;
+      text-align:center;
+      color: $text-color-dark;
+      border: 1px solid $border-color-dark;
+      border-radius: 5px;
+      background: transparent;
+    }
+  }
+
+  .vue-csv-uploader-part-two{
+    th{
+      color: $text-color-dark;
+    }
+    select {
+      border: 1px solid $border-color-dark;
+      padding: 5px;
+      background: transparent;
+      color: $text-color-dark;
+    }
+    td{
+      padding: 5px 20px;
+      color: $text-color-dark;
+    }
+  }
+
+  .contact-avatar {
+    background: $text-color;
+    color: $text-color-dark;
+  }
+
+  .contact-item, .voicemail-item, .call-item{
+    &:hover{
+      background-color: lighten($background-color-dark, 10%) !important;
+    }
+    color: $text-color-dark;
+    .call-name, .call-duration{
+      color: $text-color-accent-dark;
+    }
+    .contact-name{
+      font-weight: 700;
+    }
+  }
+
+  .status-light {
+    span {
+      border: 2px solid $background-color-dark;
+    }
+  }
+
+  .hud-subheader{
+    color: $text-color-dark;
+  }
+
+  #recent-calls-view, #queue-averages-table{
+    .el-radio-button__inner{
+      background-color: transparent;
+      color: #fff;
+    }
+    .el-radio-button__orig-radio:checked + .el-radio-button__inner{
+      background: #0F85FF;
+    }
+  }
+
+  // Connected Call
+  .connected-call {
+    color: $text-color-dark;
+
+    .avatar-group {
+
+      .contact-avatar {
+        background-color: $background-color-dark;
+        color: $text-color-dark;
+        box-shadow: inset 0 0 0 1px $border-color-dark, 0 1px 0 rgba(44, 45, 48, 0.15);
+      }
+    }
+
+    .el-card__header {
+      border-bottom: 1px solid $border-color-dark;
+    }
+  }
+
+  // Historical
+  #pane-Historical {
+
+    .el-table--group::after, .el-table--border::after, .el-table::before {
+      background-color: transparent;
+    }
+
+    #average-stats-table.el-table th {
+      border-right: 2px solid lighten($background-color-dark, 20%);
+    }
+
+    .el-table--border td {
+      border-right: 2px solid lighten($background-color-dark, 10%);
+    }
+
+    .el-table--border, .el-table--group {
+      border: none;
+    }
+  }
+
+  .page-profile {
+    .identity {
+      .username {
+        background: lighten($background-color-dark, 5%);
+        color: $text-color-dark;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .layout-container .container .header {
+      background: lighten($background-color-dark, 5%);
+    }
+    .toolbar .toggle-sidebar {
+      background: lighten($background-color-dark, 5%);
+      color: $text-color-dark;
+
+      svg {
+        color: $text-color-dark;
+      }
+    }
+    .vertical-nav .sidebar.open {
+      background: $background-color-dark;
+    }
+  }
+
+  //HOT KEY STUFF
+  .hot-key-button{
+    background: lighten($background-color-dark, 5%);
+    color: $text-color-dark;
+  }
+}
